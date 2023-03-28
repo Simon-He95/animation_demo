@@ -43,7 +43,7 @@ onMounted(() => {
         </div>
       </div>
 
-      <div aspect="[1.6/1]">
+      <div aspect="[1.6/1]" z-3>
         <img
           :class="show1Class"
           translate="-100% -80%"
@@ -76,7 +76,7 @@ onMounted(() => {
           w-30
         >
       </div>
-      <div aspect="[1.6/1]">
+      <div aspect="[1.6/1]" z-3>
         <img
           :class="show2Class"
           translate="0% 90%"
