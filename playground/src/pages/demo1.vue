@@ -28,7 +28,7 @@ onMounted(() => {
 <template>
   <div w-full h-full relative>
     <div absolute left="50%" top-0>
-      <div absolute left="-50%" top-0 translate-x="20%">
+      <div absolute left="-50%" top-0 z--1 translate-x="20%">
         <div
           :class="mask1Class"
           transition-3000

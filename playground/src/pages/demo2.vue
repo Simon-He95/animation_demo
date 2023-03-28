@@ -28,12 +28,19 @@ preload([
         <div
           class="inner"
           w-full
-          bg="[100%] no-repeat center [url(../images2/img2.jpg)]"
           aspect="[2.3/1]"
           z--1
           border-rd-15
-          :style="{ backgroundSize: `${100 + range / 2}%` }"
-        />
+          overflow-hidden
+        >
+          <img
+            src="../../public/images2/img2.jpg"
+            :style="{ transform: `scale(${1 + range / 50})` }"
+            w-full
+            h-full
+            alt=""
+          >
+        </div>
       </div>
       <div flex gap4 justify-center mt8>
         <h4 font-bold>
