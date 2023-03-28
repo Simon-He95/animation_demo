@@ -2,7 +2,10 @@
 import { preload } from '../utils'
 const range = ref(0)
 
-preload(['../../public/images2/img1.png', '../../public/images2/img2.jpg'])
+preload([
+  new URL('../../public/images2/img1.png', import.meta.url).href,
+  new URL('../../public/images2/img2.jpg', import.meta.url).href,
+])
 </script>
 
 <template>
@@ -15,7 +18,7 @@ preload(['../../public/images2/img1.png', '../../public/images2/img2.jpg'])
         items-center
         box-border
         w-full
-        bg="[url(../../public/images2/img1.png)] cover"
+        bg="[url(../images2/img1.png)] cover"
         pt3
         pb1
         pr6
@@ -25,7 +28,7 @@ preload(['../../public/images2/img1.png', '../../public/images2/img2.jpg'])
         <div
           class="inner"
           w-full
-          bg="[100%] no-repeat center [url(../../public/images2/img2.jpg)]"
+          bg="[100%] no-repeat center [url(../images2/img2.jpg)]"
           aspect="[2.3/1]"
           z--1
           border-rd-15

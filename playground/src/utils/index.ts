@@ -1,6 +1,6 @@
-export const preload = (images: string[]) => {
+export const preload = (images: (string | undefined)[]) => {
   const image = new Image()
-  images.forEach((src) => {
-    image.src = src
+  images.filter(Boolean).forEach((src) => {
+    image.src = src!
   })
 }

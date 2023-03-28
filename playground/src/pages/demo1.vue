@@ -3,11 +3,10 @@ import { preload } from '../utils'
 import svg1 from '../../public/images1/reno-black-lg.svg'
 import svg2 from '../../public/images1/reno-orange.svg'
 preload([
-  '../../public/images1/reno-black-lg.svg',
-  '../../public/images1/reno-orange.svg',
-  '../../public/images1/reno-img1.png',
-  '../../public/images1/reno-img2.png',
-  '../../public/images1/renozsvg.svg',
+  new URL('../../public/images1/reno-black-lg.svg', import.meta.url).href,
+  new URL('../../public/images1/reno-orange.svg', import.meta.url).href,,
+  new URL('../../public/images1/reno-img2.png', import.meta.url).href,
+  new URL('../../public/images1/renozsvg.svg', import.meta.url).href,
 ])
 
 const show1Class = ref('')
