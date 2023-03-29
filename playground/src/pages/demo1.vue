@@ -28,7 +28,7 @@ onMounted(() => {
 <template>
   <div w-full h-full relative>
     <div absolute left="50%" top-0>
-      <div absolute left="-50%" top-0 z--1 translate-x="20%">
+      <div absolute left="-50%" top-0 translate-x="20%">
         <div
           :class="mask1Class"
           transition-3000
@@ -36,6 +36,7 @@ onMounted(() => {
           bg-white
           w-full
           h-full
+          z-1
         />
         <img :src="svg1" alt="">
         <div class="text" text-white absolute left="50%" text-2xl top="50%">
@@ -43,7 +44,7 @@ onMounted(() => {
         </div>
       </div>
 
-      <div aspect="[1.6/1]" z-3>
+      <div aspect="[1.6/1]" relative z-3>
         <img
           :class="show1Class"
           translate="-100% -80%"
@@ -56,7 +57,7 @@ onMounted(() => {
       </div>
     </div>
     <div absolute left="50%" bottom-0>
-      <div absolute left="-50%" bottom-0 z--1 translate-x="-45%">
+      <div absolute left="-50%" bottom-0 translate-x="-45%">
         <div
           :class="mask2Class"
           transition-3000
@@ -64,6 +65,7 @@ onMounted(() => {
           bg-white
           w-full
           h-full
+          z-1
         />
         <img :src="svg2" alt="">
         <img
@@ -76,7 +78,7 @@ onMounted(() => {
           w-30
         >
       </div>
-      <div aspect="[1.6/1]" z-3>
+      <div aspect="[1.6/1]" relative z-3>
         <img
           :class="show2Class"
           translate="0% 90%"
