@@ -1,7 +1,7 @@
 {
   "name": "animation_demo",
   "version": "0.0.1",
-  "packageManager": "pnpm@7.18.2",
+  "packageManager": "pnpm@7.33.7",
   "description": "animation_demo",
   "author": "Simon He",
   "license": "MIT",
